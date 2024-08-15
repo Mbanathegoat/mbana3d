@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css" crossorigin="anonymous">
+
+    <!-- X3DOM.css -->
+    <link rel='stylesheet' type='text/css' href='./css/x3dom.css'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" crossorigin="anonymous">
+
+    <!-- Lets have some fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <!-- fancyBox3 -->
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fancybox.min.css">
+
+    <title>Home</title>
+
+</head>
+<body id="bodyColor">
+<!-- The 3D App header -->
+<nav id="headerColor" class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+
+    <!-- Brand -->
+    <div class="logo">
+        <a class="navbar-brand" href="#">
+            <h1>Air</h1>
+            <h2>Cola</h2>
+            <h3>Journey</h3>
+            <p>Refreshing the world, one story at a time</p>
+        </a>
+    </div>
+
+    <!-- Navbar Menu Icon -->
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- link Menu Icon button to the links class navbar-collapse selector] -->
+    <div class="collapse navbar-collapse">
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a id="navHome" class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a id="navHome" class="nav-link active" href="./about.html">About</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item">
+                <a id="navModels" class="nav-link" href="./Models.html" data-toggle="popover" data-trigger="hover"
+                   data-placement="bottom" title="X3D Models"
+                   data-content="There are three X3D models: Coke, Sprite and Pepper">Models</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!-- This is the main contents of the page, it has a background image across 1 column, followed by three columns holding cards in a row for the 3 images and associated texts
+-->
+<div class="container-fluid">
+
+    <!-- This is the home page contents -->
+    <div id="home" class="main_contents">
+        <!-- A row for the main 3D image theme — could make this a Jubotron with a carousel -->
+        <div class="row">
+            <div class="col-sm-12">
+                
+            </div>
+        </div>
+        <div class="aboutHtml">
+        </div>
+        <section id="about">
+            <h2>About This Project</h2>
+            <p>
+                Welcome to the Coca Cola Branded 3D App, a project designed as part of my coursework for Advancved Computer Scienece at the University of Sussex. This project aims to integrate 3D models into a web-based application using modern web technologies and principles, such as HTML5, CSS3, JavaScript, and PHP. The application adheres to the Model-View-Controller (MVC) architecture, ensuring a clear separation of concerns and enhancing maintainability.
+            </p>
+            <p>
+                The 3D App features a selection of Coca Cola branded products, each rendered in an interactive 3D space. Users can explore and manipulate these models using a variety of tools and options available in the app's interface. The project leverages X3DOM for rendering the 3D models directly within the web browser, providing a seamless and immersive user experience.
+            </p>
+            <h3>Key Features</h3>
+            <ul>
+                <li>Interactive 3D models of Coca Cola products, including cans and bottles.</li>
+                <li>Responsive user interface designed using Bootstrap 4, ensuring compatibility across devices.</li>
+                <li>Dynamic content loading and interaction powered by JavaScript, jQuery, AJAX, and JSON.</li>
+                <li>Data management and storage handled by a SQLite database, accessed via PHP scripts.</li>
+                <li>Implementation of the MVC design pattern for organized and efficient code structure.</li>
+                <li>Detailed object view implemented using glightbox</li>
+            </ul>
+            <h3>Technologies Used</h3>
+            <ul>
+                <li><strong>HTML5 & CSS3:</strong> For structuring and styling the web pages.</li>
+                <li><strong>JavaScript & jQuery:</strong> To handle interactivity and DOM manipulation.</li>
+                <li><strong>X3DOM:</strong> For embedding and controlling 3D content in the browser.</li>
+                <li><strong>PHP:</strong> For server-side logic and database interaction.</li>
+                <li><strong>SQLite:</strong> A lightweight database solution for storing model data.</li>
+                <li><strong>AJAX & JSON:</strong> For asynchronous data exchange between the frontend and backend.</li>
+            </ul>
+            <h3>Project Goals</h3>
+            <p>
+                The primary goal of this project is to demonstrate proficiency in building web applications that integrate 3D content and interactivity using modern web development techniques. By adhering to the MVC pattern, the project also aims to showcase the importance of organized code architecture in building scalable and maintainable web applications.
+            </p>
+            <p>
+                This project serves as a comprehensive learning experience, combining different aspects of web development, from frontend design and interaction to backend logic and database management.
+            </p>
+        </section>
+        
+        <!-- A row to hold three cards for the Coke, Sprite and Pepper contents -->
+
+    </div>  <!-- End home page contents-->
+
+
+    
+</div> <!-- End 3D App SPA Contents -->
+
+<nav id="footerColor" class="navbar navbar-expand-sm footer">
+    <div class="container-fluid">
+        <div class="navbar-text float-left copyright">
+            <p>
+                <span class="align-baseline">Submitted in partial fulfilment of the Advanced Computer Science Masters Degree at the University of Sussex</span>
+            </p>
+        </div>
+               <div class="navbar-text float-right social">
+              <a href="https://github.com/Mbanathegoat/mbana3dapp"><i class="fab fa-github-square fa-2x"></i></a>
+             </div>
+    </div>
+</nav>
+</nav>
+<!-- My 3D App modals -->
+<!-- Contact modal -->
+<!-- The Modal -->
+<div class="modal fade" id="contactModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">3D App Contact Details</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <p>Dr Martin White, Chichester 1, 126, Email: na554@sussex.ac.uk</p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./js/jquery.min.js" crossorigin="anonymous"></script>
+<script src="./js/popper.min.js" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="./js/fontawesome-all.min.js"></script>
+<!-- Custom JavaScript code for your 3d App -->
+<script src="./js/custom.js" crossorigin="anonymous"></script>
+<script src="./js/jquery.fancybox.min.js"></script>
+</body>
+</html>
